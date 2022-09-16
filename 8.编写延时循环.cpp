@@ -23,6 +23,4 @@ int main(){
     while(clock() - start < delay)
         ;
     cout<<"等待结束"<<endl;
-
-    return 0;
 }
