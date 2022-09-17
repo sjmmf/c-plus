@@ -15,7 +15,12 @@ int main(){
     //     cin.get(ch);
     // }
     //由于cin.get(char)的返回值为cin，istream类提供了将istream对象转换为bool的函数，所以循环条件可以直接写为cin.get(char)
-    while(cin.get(ch)){
+    // while(cin.get(ch)){
+    //     cout<<ch;
+    //     count++;
+    // }
+    //上述代码也可以写成
+    while((ch = cin.get()) != EOF){
         cout<<ch;
         count++;
     }
